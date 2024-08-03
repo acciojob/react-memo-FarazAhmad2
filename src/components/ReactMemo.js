@@ -18,7 +18,7 @@ const SkillList = () => {
   return (
     <div>
       <h1>React.memo</h1>
-      <input type="text" value={Inp} onChange={(e) => setInp(e.target.value)} />
+      <input id="skill-input" type="text" value={Inp} onChange={(e) => setInp(e.target.value)} />
       <button onClick={addSkill}>Add Skill</button>
       <ul>
         {skill.map((item, idx) => (

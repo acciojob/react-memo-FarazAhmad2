@@ -11,11 +11,11 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div id="main">
       <h1>React.useMemo</h1>
       <h1>My todos</h1>
       <ul className="todo">{todo && todo.map((task, id) => <li key={id}>{task}</li>)}</ul>
-      <button style={{ margin: "1rem 0" }} onClick={addTodo}>
+      <button id="add-todo-btn" style={{ margin: "1rem 0" }} onClick={addTodo}>
         Add Todo
       </button>
       <hr />
