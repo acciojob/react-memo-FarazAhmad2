@@ -13,8 +13,8 @@ const UseMemo = () => {
   }, [count]);
   return (
     <div>
-      <span>Count: {count}</span>
-      <button id="incr-cnt" onClick={increment}>+</button>
+      <span id="incr-cnt">Count: {count}</span>
+      <button onClick={increment}>+</button>
       <h1>Expensive Calulation</h1>
       <p>{expanCal}</p>
     </div>

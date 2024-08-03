@@ -19,7 +19,7 @@ const SkillList = () => {
     <div>
       <h1>React.memo</h1>
       <input id="skill-input" type="text" value={Inp} onChange={(e) => setInp(e.target.value)} />
-      <button onClick={addSkill}>Add Skill</button>
+      <button id="skill-btn" onClick={addSkill}>Add Skill</button>
       <ul>
         {skill.map((item, idx) => (
           <li onClick={()=>deleteSkill(item)} key={idx}>{item}</li>
